@@ -1,8 +1,13 @@
 <?php
 
 require_once(get_theme_file_path("/inc/tgm.php"));
-require_once(get_theme_file_path("/inc/attachments.php"));
+require_once(get_theme_file_path("/inc/customizer.php"));
 require_once(get_theme_file_path("/widgets/social-icons-widget.php"));
+require_once(get_theme_file_path("/inc/acf-metabox.php"));
+
+if (class_exists("Attachments")){
+    require_once(get_theme_file_path("/inc/attachments.php"));
+}
 
 if (!isset($content_width)) $content_width = 900;
 function philosophy_setup_theme()
