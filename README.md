@@ -1,0 +1,1 @@
+# philosophy-wp-theme
